@@ -14,12 +14,7 @@ body
     transition: all 0.3s linear;
 }
 
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
+
 
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
@@ -122,7 +117,12 @@ nav
   color: white;
   text-decoration: none;
   cursor:pointer;
+  transition: 0.4s;
+}
 
+.nav-link a:hover
+{
+    color:  rgb(58, 58, 58);
 }
 
 
@@ -164,12 +164,21 @@ nav
 }
 
 .product:hover {
+    /*rotate animation*/
     -webkit-transform: rotate(-7deg);
     -moz-transform:rotate(-7deg);
     -o-transform:rotate(-7deg);
    transform:rotate(-7deg);
 
+
+   /*shadow*/
+   -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+   -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+   -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+   box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+
 }
+
 
 .product > img
 {
